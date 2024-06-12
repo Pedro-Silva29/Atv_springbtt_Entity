@@ -1,6 +1,6 @@
 # Etapa 1: Construir o JAR usando Maven
 # Usar uma imagem base oficial do Maven para construir o JAR
-FROM maven:3.8.6-openjdk-17-slim AS build
+FROM maven:3.8.6-eclipse-temurin-17 AS build
 
 # Definir o diretório de trabalho dentro do contêiner
 WORKDIR /app
@@ -14,7 +14,7 @@ RUN mvn clean package -DskipTests
 
 # Etapa 2: Criar a imagem de execução
 # Usar uma imagem base oficial do OpenJDK
-FROM openjdk:17-jdk-alpine
+FROM eclipse-temurin:17-jdk-alpine
 
 # Definir o diretório de trabalho dentro do contêiner
 WORKDIR /app
