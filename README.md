@@ -9,3 +9,8 @@ Pedro Tavares
 Sabrina Costa
 Davi Marcelo
 Ana Caroline
+
+#Requisições
+
+###Métodos GET: (/produtos),(/usuarios),(/categorias)
+
