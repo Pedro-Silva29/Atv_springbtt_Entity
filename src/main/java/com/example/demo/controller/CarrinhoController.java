@@ -19,6 +19,7 @@ public class CarrinhoController {
         return carrinhoServico.obterTodosCarrinhos();
     }
 
+    //carrinho_id
     @GetMapping("/{carrinhoId}")
     public ResponseEntity<Carrinho> obterCarrinhoPorId(@PathVariable Long carrinhoId) {
         return carrinhoServico.obterCarrinhoPorId(carrinhoId)
