@@ -19,6 +19,7 @@ public class CategoriaController {
         return categoriaServico.obterTodasCategorias();
     }
 
+    //categoria_id
     @GetMapping("/{categoriaId}")
     public ResponseEntity<Categoria> obterCategoriaPorId(@PathVariable Long categoriaId) {
         return categoriaServico.obterCategoriaPorId(categoriaId)
