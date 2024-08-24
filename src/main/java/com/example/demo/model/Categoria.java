@@ -15,6 +15,7 @@ public class Categoria {
     private String nome;
 
     @OneToMany(mappedBy = "categoria", cascade = CascadeType.ALL, orphanRemoval = true)
+    @JsonManagedReference
     private List<Produto> produtos = new ArrayList<>();
 
     public Categoria(Long id, String nome, List<Produto> produtos) {
