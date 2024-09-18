@@ -28,6 +28,10 @@ public class Carrinho {
         this.produtos = produtos;
     }
 
+    public Carrinho() {
+
+    }
+
     public Long getId() {
         return id;
     }
