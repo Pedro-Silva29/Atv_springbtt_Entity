@@ -20,7 +20,7 @@ public class Produto {
 
     @ManyToOne
     @JoinColumn(name = "categoria_id")
-    @JsonIgnore
+    @JsonManagedReference
     private Categoria categoria;
 
     public Produto(Long id, String nome, float preco, String descricao, Categoria categoria) {
